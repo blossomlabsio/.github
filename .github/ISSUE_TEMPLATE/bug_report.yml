@@ -1,0 +1,33 @@
+name: Bug Report
+description: Create a bug report to help us improve
+title: "[BUG]: <title>"
+labels: "bug"
+
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    attributes:
+      label: Please describe the bug
+      description: Also tell us, what did you expect?
+      placeholder : | 
+        When I was doing <something>, a bug happened ...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe the device where you encountered the bug on
+      description: Please include details like browser, OS etc
+      placeholder : |
+        I faced the bug on ...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Relevant log output and/or screenshot(s)
+      description: 
+      placeholder : |
+        context, screenshots, related links etc.
+    validations:
+      required: false
